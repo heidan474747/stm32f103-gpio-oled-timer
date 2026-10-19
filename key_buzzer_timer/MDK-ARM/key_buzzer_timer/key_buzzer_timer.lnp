@@ -1,0 +1,26 @@
+--cpu Cortex-M3
+"key_buzzer_timer\startup_stm32f103xb.o"
+"key_buzzer_timer\main.o"
+"key_buzzer_timer\gpio.o"
+"key_buzzer_timer\tim.o"
+"key_buzzer_timer\stm32f1xx_it.o"
+"key_buzzer_timer\stm32f1xx_hal_msp.o"
+"key_buzzer_timer\oled.o"
+"key_buzzer_timer\stm32f1xx_hal_gpio_ex.o"
+"key_buzzer_timer\stm32f1xx_hal_tim.o"
+"key_buzzer_timer\stm32f1xx_hal_tim_ex.o"
+"key_buzzer_timer\stm32f1xx_hal.o"
+"key_buzzer_timer\stm32f1xx_hal_rcc.o"
+"key_buzzer_timer\stm32f1xx_hal_rcc_ex.o"
+"key_buzzer_timer\stm32f1xx_hal_gpio.o"
+"key_buzzer_timer\stm32f1xx_hal_dma.o"
+"key_buzzer_timer\stm32f1xx_hal_cortex.o"
+"key_buzzer_timer\stm32f1xx_hal_pwr.o"
+"key_buzzer_timer\stm32f1xx_hal_flash.o"
+"key_buzzer_timer\stm32f1xx_hal_flash_ex.o"
+"key_buzzer_timer\stm32f1xx_hal_exti.o"
+"key_buzzer_timer\system_stm32f1xx.o"
+--strict --scatter "key_buzzer_timer\key_buzzer_timer.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "key_buzzer_timer.map" -o key_buzzer_timer\key_buzzer_timer.axf

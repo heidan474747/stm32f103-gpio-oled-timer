@@ -1,0 +1,20 @@
+# Keil MDK 编译产物
+Objects/
+Listings/
+DebugConfig/
+*.uvgui*
+*.uvgui.*
+*.axf
+*.hex
+*.bin
+*.elf
+*.o
+*.d
+*.crf
+*.dep
+*.lnp
+
+# 通用过滤
+build/
+cmake-build-*/
+.idea/

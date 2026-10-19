@@ -1,0 +1,23 @@
+--cpu Cortex-M3
+"ir_counter\startup_stm32f103xb.o"
+"ir_counter\main.o"
+"ir_counter\gpio.o"
+"ir_counter\stm32f1xx_it.o"
+"ir_counter\stm32f1xx_hal_msp.o"
+"ir_counter\oled.o"
+"ir_counter\stm32f1xx_hal_gpio_ex.o"
+"ir_counter\stm32f1xx_hal.o"
+"ir_counter\stm32f1xx_hal_rcc.o"
+"ir_counter\stm32f1xx_hal_rcc_ex.o"
+"ir_counter\stm32f1xx_hal_gpio.o"
+"ir_counter\stm32f1xx_hal_dma.o"
+"ir_counter\stm32f1xx_hal_cortex.o"
+"ir_counter\stm32f1xx_hal_pwr.o"
+"ir_counter\stm32f1xx_hal_flash.o"
+"ir_counter\stm32f1xx_hal_flash_ex.o"
+"ir_counter\stm32f1xx_hal_exti.o"
+"ir_counter\system_stm32f1xx.o"
+--strict --scatter "IR_Counter\IR_Counter.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "IR_Counter.map" -o IR_Counter\IR_Counter.axf
